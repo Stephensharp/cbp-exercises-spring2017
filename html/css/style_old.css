@@ -1,0 +1,59 @@
+h1 {
+    color: blue;
+}
+
+a {
+    font-weight: bold;
+    color: blue;
+}
+
+a {
+    color: white;
+    background-color: black;
+}
+
+#biography {
+    background-color: #9295ce;
+}
+
+p {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+p {
+    color: green;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.green-headline {
+    color: green;
+}
+
+div#biography.big a {
+    display: none;
+}
+
+.filmography td {
+    background-color: orange;
+}
+.filmography.big {
+    font-size: 20px;
+}
+
+/* every second row's td */
+/* I had to Google this */
+table tr:nth-child(2n) td {
+    background-color: black;
+}
+
+td:hover {
+    color: white;
+}
+
+table[border="2"] {
+    border-color: red;
+}
+
