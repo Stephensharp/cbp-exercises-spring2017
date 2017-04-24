@@ -1,0 +1,21 @@
+#first,
+#second,
+#third {
+    width: 600px;
+    padding: 0.5em;
+    margin: 1em auto;
+}
+
+#first {
+    border: 1px solid black;
+}
+
+#second {
+    border: 10px dotted blue;
+}
+
+#third {
+    border: 1px solid green;
+    border-width: 3px 1px 3px 0px;
+    background-color: silver;
+}

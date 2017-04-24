@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box model</title>
+
+    <style>
+div {
+    padding: 1em;
+    border: 1em solid yellow;
+    margin: 1em;
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 2px;
+}
+.with-child {
+    width: 12em;
+    padding: 2em;
+}
+.child {
+    max-width: 10em;
+    width: 10em;
+    background-color: lightgreen;
+    overflow-x: scroll;
+    overflow-y: visible;
+}
+.empty {
+    min-width: 2em;
+}
+.text {
+    padding: 10px 20px 30px 40px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+
+    <div class="with-child">
+        <div class="child">
+            Duis feugiat odio et lacus sodales, ac interdum ante accumsan.
+        </div>
+    </div>
+
+    <div class="empty">
+        <!-- intentionally empty -->
+    </div>
+    
+</body>
+</html>

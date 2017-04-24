@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display & Visibility</title>
+
+    <style>
+html {
+    font-family: Courier New, Courier, monospace;
+    font-size: 20px;
+}
+
+.red, .hide-me {
+    background-color: yellow;
+}
+.between {
+    background-color: lightcoral;
+}
+.red {
+    display: block;
+}
+.between {
+    display: inline;
+}
+.hide-me {
+    visibility: hidden;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+        Lorem ipsum dolor sit amet, <span class="red" style="color: red">consectetur adipiscing</span> elit. Duis feugiat odio et lacus sodales, ac interdum ante accumsan. Curabitur tempus justo vel justo condimentum, nec euismod mauris molestie. Phasellus magna arcu, suscipit at tristique eu, facilisis at ligula. Integer suscipit suscipit diam, et varius felis molestie nec. 
+
+        <div class="between">
+            The &lt;div&gt; in between
+        </div>
+
+        <span class="hide-me">In hac habitasse platea dictumst.</span> Ut libero nisi, venenatis eget dolor sed, lobortis pharetra ante. Cras in justo sit amet sapien gravida volutpat quis tristique felis. Integer pellentesque velit aliquet cursus facilisis. Aliquam erat volutpat. Aenean euismod dui non tellus molestie, eu aliquam leo vestibulum. 
+    </div>
+
+</body>
+</html>
