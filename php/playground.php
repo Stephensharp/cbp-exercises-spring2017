@@ -152,6 +152,22 @@ null === false; // false
 true === false; // false
 gettype(true) === gettype(false); // true - 'boolean' === 'boolean'
 
+!true; // == false
+!false; // == true
+!0; // true
+!'something'; // false
+!''; // true
+(boolean)'something'; // true
+!!'something'; // true - inefficient
+
+true && true; // true
+true && false; // false
+false && false; // false
+true || true; // true
+true || false; // true
+false || false; // false\
+true && (false || true); // true
+
 $height = 160;
 
 if($height > 180) {
