@@ -1,5 +1,6 @@
 <?php
 
+// function 1 generated these messages
 $messages = [
   'error' => [
     'Something went wrong',
@@ -15,6 +16,43 @@ $messages = [
   ]
 ];
 
+function do_something_risky() {
+  // do the risky stuff
+
+  // return new messages
+  return [
+    'error' => [
+      'I knew this would happen!',
+      'This always happens.'
+    ],
+    'warning' => [
+      'You should fix this before proceeding'
+    ],
+    'success' => []
+  ];
+}
+
+// let's try it
+$new_messages = do_something_risky();
+
+$all_messages = array_merge($messages, $new_messages);
+
+$array1 = [
+    'blue' => 'sky',
+    'red' => 'flower',
+    'yellow' => 'banana'
+];
+
+$array2 = [
+    'green' => 'grass',
+    'orange' => 'orange',
+    'yellow' => 'submarine',
+    'red' => 'shoes'
+];
+
+$result = array_merge($array1, $array2);
+var_dump($result); die();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +67,7 @@ $messages = [
 <body>
 
     <div class="messages"> <!-- wrapper (not required) -->
-        <?php foreach($messages as $type => $messages_of_type) : ?>
+        <?php foreach($all_messages as $type => $messages_of_type) : ?>
 
             <?php foreach($messages_of_type as $message) : ?>
                 
