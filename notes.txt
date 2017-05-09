@@ -1,0 +1,63 @@
+* Milestone 1: MVP
+add a new note (indefinitely long)
+modify an existing note
+delete the note
+display a list of notes
+display the note
+display date of creation and last modification
+------------------------------------------------------
+* Milestone 2: Production ready application
+sort notes
+filter notes
+fulltext search feature within notes' text
+write in markdown
+-------------------------------------------------------
+* Milestone 3
+add notes to categories
+add tags to notes
+--------------------------------------------------------
+* Milestone 4
+favourite notes for faster access
+automatic saving
+---------------------------------------------------------
+TODO list - checklist
+sending notes from user to user
+archive of TODOs
+history of changes made
+note templates
+add pictures to notes
+add pictures as notes
+merge notes
+color label notes - importance, subject, category
+add links within notes and quick access to position within notes
+display two different notes at the same time (compare)
+remind function (alert)
+display recently modified notes (last notes)
+add comment notes and display them at the end of the note 
+    (connected to TODO & remind)
+zoom text in notes
+autosuggest in search
+
+==========================================================
+Pages
+==========================================================
+
+Form to edit notes
+    add a new note (indefinitely long)
+    modify an existing note
+    delete the note
+List of notes
+    display a list of notes
+    display date of creation and last modification
+Note detail
+    display the note
+    display date of creation and last modification
+Homepage
+    display a list of notes
+    add a new note (indefinitely long)
+
+
+
+
+
+
