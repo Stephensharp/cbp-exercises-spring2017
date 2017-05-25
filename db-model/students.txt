@@ -1,0 +1,21 @@
+students
+--------
+id - INT(11), PK, UNSIGNED, NOT NULL, AUTOINCREMENT
+first_name - VARCHAR(127)
+last_name - VARCHAR(127)
+class_year - VARCHAR(4)
+year_of_enrollment - VARCHAR(4)
+year_of_graduation - VARCHAR(4)
+is_alumni - TINYINT(1), DEFAULT 0
+date_of_birth - DATE
+course_id - INT(11)
+nr_of_credits - INT(11)
+university_city - VARCHAR(127)
+nationality - VARCHAR(127)
+major - VARCHAR(127)
+sex - INT(11)
+favourite_quote - TEXT
+created_at - DATETIME
+updated_at - DATETIME
+created_by - INT(11)
+updated_by - INT(11)
