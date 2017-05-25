@@ -65,6 +65,9 @@ $positions = array(1=>array(8=>'r',7=>'p',2=>'P',1=>'R',),2=>array(8=>'n',7=>'p'
 $turn1_board = new board($positions);
 echo $turn1_board;
 
+$another_board = new board('rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq c6 0 2');
+echo $another_board;
+
 ?>
 
 </body>

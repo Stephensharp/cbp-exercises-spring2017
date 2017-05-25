@@ -6,7 +6,14 @@ class board
 
     public function __construct($pieces)
     {
-        $this->pieces = $pieces;
+        if(is_array($pieces))
+        {
+            $this->pieces = $pieces;
+        }
+        elseif(is_string($pieces))
+        {
+            $this->pieces = $this->convertFenToArray($pieces);
+        }
     }
 
     public function __toString()
@@ -40,4 +47,35 @@ class board
 
         return $html;
     }
+
+    // Forsyth–Edwards Notation
+    public function convertFenToArray($fen)
+    {
+        $parts = preg_split('#\s+#', $fen);
+        $rows = explode('/', $parts[0]);
+
+        $pieces = array();
+
+        $y = 8;
+        foreach($rows as $row)
+        {
+            $x = 1;
+            for($i = 0; $i < strlen($row); $i++)
+            {
+                if(is_numeric($row[$i]))
+                {
+                    $x += intval($row[$i]);
+                }
+                else
+                {
+                    $pieces[$x][$y] = $row[$i];
+                    $x++;
+                }
+            }
+            $y--;
+        }
+
+        return $pieces;
+    }
+
 }
