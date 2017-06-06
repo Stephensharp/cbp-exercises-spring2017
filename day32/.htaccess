@@ -1,0 +1,11 @@
+# Deny from all
+# Allow from 127.0.0.1
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # redirect to our front web controller, protecting real files (like CSS)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ pretty-url.php [QSA,L]
+</IfModule>
