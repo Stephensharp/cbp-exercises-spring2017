@@ -59,4 +59,14 @@ class game
         // // return the array
         // return $games;
     }
+
+    public function getReadableReleasedAt()
+    {
+        $nice_format = 'j. n. Y';
+
+        $time = strtotime($this->released_at);
+
+        return date($nice_format, $time);
+
+    }
 }

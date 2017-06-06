@@ -37,15 +37,18 @@ var_dump($genres);
             </div>
             <div class="info">
                 <h2 class="name"><?php echo $game->name; ?></h2>
-                <div class="release">Released at: <?php echo $game->released_at; ?></div>
+                <div class="release">Released at: <?php echo $game->getReadableReleasedAt(); ?></div>
                 <div class="genres">
-                    <a href="#">Sci-fi</a>
-                    <a href="#">Fantasy</a>
+
+                    <?php foreach($genres[$game->id] as $genre) : ?>
+                        <a href="#"><?php echo $genre->name; ?></a>
+                    <?php endforeach; ?>
+                    
                 </div>
                 <div class="description">
-                    For Honor is a competitive third-person melee title which mixes speed, strategy and team play with close range combat. The Chosen has survived a thousand years of wandering the southern deserts. Their journey should have wiped them out hundreds of years ago, but they survived thanks to the skill set and focus of their heroes. These individuals hoe to lead their followers to an improbable victory and to establish a new homeland. Striking fear in their enemies, The Warborn warriors sail across the Boiling Sea to raid the southern coast. Known for their fire and passion, they will seek to drive their enemies out of their ancestral lands. On the shoulders of great heroes, The Legions have driven out invaders, conquered any who wouldn\'t join them, and established hundreds of others to defend what is theirs. Facing invasion on two fronts, these heroes fight to protect their lands form the heathens who would take it.
+                    <?php echo $game->description; ?>
                 </div>
-                <div class="rating">77%</div>        
+                <div class="rating"><?php echo $game->rating; ?>%</div>        
             </div>
         </div>
 
